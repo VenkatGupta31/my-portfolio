@@ -2,11 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --foreground: 222 47% 11%;
+  --background: 0 0% 100%;
+  --muted: 210 40% 98%;
+  --border: 214 32% 91%;
+}
+
+.dark {
+  --foreground: 210 40% 98%;
+  --background: 222 47% 11%;
+  --muted: 217 33% 17%;
+  --border: 215 25% 27%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50 transition-colors duration-300;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-a {
-  @apply text-blue-600 dark:text-blue-400 hover:underline;
+@layer components {
+  .glass-effect {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-white/20 dark:border-gray-700/50;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent;
+  }
+  
+  .section-padding {
+    @apply py-20 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
