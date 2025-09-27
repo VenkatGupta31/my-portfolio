@@ -98,7 +98,7 @@ export default function Awards() {
               Continuous Excellence
             </h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-              Throughout my 9+ year career, I've consistently delivered high-quality solutions, 
+              Throughout my 9+ year career, I&apos;ve consistently delivered high-quality solutions, 
               mentored team members, and contributed to successful project outcomes across 
               various organizations and technologies.
             </p>

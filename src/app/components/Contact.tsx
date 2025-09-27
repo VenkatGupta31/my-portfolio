@@ -82,7 +82,7 @@ export default function Contact() {
         </h2>
         <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto rounded-full"></div>
         <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto text-sm md:text-base">
-          Let's discuss how we can work together to bring your ideas to life
+          Let&apos;s discuss how we can work together to bring your ideas to life
         </p>
       </div>
 
@@ -92,10 +92,10 @@ export default function Contact() {
           <div className="space-y-6 md:space-y-8">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed">
-                I'm always open to discussing new opportunities, interesting projects, 
+                I&apos;m always open to discussing new opportunities, interesting projects, 
                 or potential collaborations. Feel free to reach out through any of the 
                 channels below.
               </p>
@@ -141,7 +141,7 @@ export default function Contact() {
                   Message Sent!
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Thank you for your message. I'll get back to you soon.
+                  Thank you for your message. I&apos;ll get back to you soon.
                 </p>
               </div>
             ) : (
